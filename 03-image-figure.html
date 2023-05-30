@@ -1,1 +1,37 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이미지와 피규어</title>
+</head>
+
+<body>
+  <!-- alt에 logo나 img 같은 부연 설명은 붙이지 않는다 -->
+  <h1>
+    <img src="./images/webcafe-logo.png" alt="web cafe" />
+  </h1>
+
+  <!-- 삽화나 다이어그램, 사진 등과 같이 문서의 주요 흐름과는 독립적인 콘텐츠를 정의할 때 사용 -->
+  <figure>
+    <img src="./images/likelion-black.png" alt="" />
+    <!-- img의 caption 역할 -->
+    <figcaption>like lion</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/rwd.jpg" alt="" />
+    <!-- caption 안에 여러 태그 삽입 가능 -->
+    <figcaption>
+      <p>
+        <strong>Responsive Web<br />Design Strategies</strong>
+        <span>반응형 웹디자인 전략</span>
+      </p>
+      <a href="/">강의정보</a>
+    </figcaption>
+  </figure>
+</body>
+
+</html>
