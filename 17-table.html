@@ -1,1 +1,81 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>table 관련 요소</title>
+</head>
+<body>
+  <h1>과목별 테스트 결과</h1>
+
+  <p id="tableDesc">
+    '함께 성장하는 바른 교육' 이듬(EUID)과 멋사가 만났습니다. 좋은 프론트엔드 개발자를 양성하기 위해 최선의 노력을 다하겠습니다. 여러분도 적극 동참해 주시기 바랍니다.
+  </p>
+
+  <!-- aria-describedby : 이 테이블의 설명이 있는 곳의 위치 표시 -->
+  <table border="1" summary="표의 요약 정보" aria-describedby="tableDesc">
+    <tr>
+      <!-- 제목 : th -->
+      <th>과목명</th>
+      <th id="html">HTML/CSS</th>
+      <th id="js">Javascript</th>
+      <th id="react">React</th>
+    </tr>
+    <!-- 새로운 행 -->
+    <tr>
+      <!-- headers로 어느 정보가 연결 관계에 있는지 알려줌 -->
+      <th id="ma01">김미리</th>
+      <td headers="html ma01">100</td>
+      <td headers="js ma01">95</td>
+      <td headers="react ma01">98</td>
+    </tr>
+    <tr>
+      <th id="ma02">임시연</th>
+      <td>97</td>
+      <td>100</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <th id="ma03">김태진</th>
+      <td>80</td>
+      <td>75</td>
+      <td>63</td>
+    </tr>
+  </table>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>과목명</th>
+        <th scope="col">HTML/CSS</th>
+        <th scope="col">Javascript</th>
+        <th scope="col">React</th>
+      </tr>
+    </thead>
+    <!-- tfoot : 무조건 테이블의 마지막 -->
+    <tfoot>
+      <tr>
+        <th scope="row">금윤호</th>
+        <td>100</td>
+        <td>95</td>
+        <td>98</td>
+      </tr>
+    </tfoot>
+    <!-- 중간 내용 -->
+    <tbody>
+      <tr>
+        <th scope="row">범쌤</th>
+        <td>97</td>
+        <td>100</td>
+        <td>99</td>
+      </tr>
+      <tr>
+        <th scope="row">홍길동</th>
+        <td>80</td>
+        <td>75</td>
+        <td>63</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
