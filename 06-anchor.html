@@ -1,1 +1,30 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>하이퍼링크</title>
+</head>
+<body>
+  <div>
+    <a href="/">더보기</a>
+  </div>
+
+  <div>
+    <!-- title : global attribute : 누구나 가질 수 있는 속성 -->
+    <!-- data-="" : 사용자 정의 속성 -->
+    <a href="/" title="다운로드">
+      <img src="images/brochure.png" alt="카페 W 강좌 브로슈어" />
+    </a>
+  </div>
+
+  <div>
+    <a href="/" aria-label="카페 W 강좌 브로슈어 다운로드">
+      <!-- alt를 title로 바꿔쓰면 안 됨 -->
+      <!-- img 태그에 alt는 필수 속성임 -->
+      <img src="images/brochure.png" alt="" />
+    </a>
+  </div>
+</body>
+</html>
