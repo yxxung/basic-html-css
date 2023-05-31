@@ -1,1 +1,33 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>폼 관련 요소</title>
+</head>
+
+<body>
+  <h1>폼 관련 요소</h1>
+  <form action="https://formspree.io/seulbinim@gmail.com" method="post" id="searchForm">
+    <!-- fieldset : 연관성있는 서식들을 묶어놓음 -->
+    <!-- fieldset을 flex와 같이 적용할 경우 에러나는 이슈가 있음 -->
+    <fieldset>
+      <legend>검색</legend>
+      <div>
+        <!-- ********************************* -->
+        <!-- for과 id를 맞춰줌 명시적인 레이블링!!! 필수 -->
+        <!-- 입력 값의 제목 -->
+        <label for="search">자료검색</label>
+        <!-- placeholder는 입력 값의 힌트 -->
+        <input id="search" type="search" placeholder="검색어를 입력하세요" />
+      </div>
+    </fieldset>
+
+    <!-- form이 가지고 있는 action으로 전송 -->
+    <button type="submit" form="searchForm">전송</button>
+  </form>
+</body>
+
+</html>
