@@ -1,4 +1,5 @@
 /* CSS 선택자(Selector) */
+
 /* 전체 선택자 */
 * {
   text-decoration: none;
@@ -6,9 +7,14 @@
   list-style: none;
 }
 
+/* 가상 요소 선택자 */
+::selection {
+  background: #373e6a;
+  color: #649985;
+}
+
 /* 태그 선택자 */
 body {
-  margin: 0;
   font-family: "SUIT";
   font-weight: 300;
   background-color: #121212;
@@ -20,12 +26,53 @@ body {
   text-shadow: 4px 4px 3px #77f;
 }
 
-ul.menu{
-	margin: 0;
-	padding-left: 0;
-  color: #ff0000;
+.align {
+  text-align: center;
+}
+
+ul.menu {
+  margin: 0;
+  padding-left: 0;
+  color: #ffffff;
 }
 
 #demo {
-  border: red 2px solid;
+  border: rgb(251, 0, 0) 2px solid;
+}
+
+/* 속성 선택자 */
+.menu a[href$=".html"] {
+  background-color: aquamarine;
+}
+
+/* 선택자 목록(그루핑) */
+.fancy,
+.menu {
+  font-size: 24px;
+}
+
+/* 가상 요소 선택자 */
+.align::before {
+  content: "이전 요소";
+}
+
+.align::after {
+  content: "다음 요소";
+}
+
+/* 가상 클래스 */
+/* css는 1부터 시작 */
+
+/* -n+2 : 2번까지 전부 선택(negative) */
+/* n+6 : 6번 이후로 전부 선택(positive) */
+.menu li:nth-child(odd) {
+  color: yellow;
+}
+
+.menu a:hover {
+  border: 5px solid blue;
+}
+
+h1.menu:hover, h1.menu:focus {
+  background-color: darksalmon;
 }
