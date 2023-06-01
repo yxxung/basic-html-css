@@ -1,4 +1,37 @@
 body {
   font-family: "SUIT";
-  font-weight: 300;
 }
+
+.menu{
+  color: rgb(66, 103, 103);
+  font-size: 36px;
+  /* border : inherit 불가 */
+  border: 5px green dashed;
+}
+
+/* 이러면 pick만 yellow지 않을까? => 아님 */
+/* li로부터 상속받아서 cascading 됨 */
+/* .menu li의 경우 선택자가 2개이기 때문에 우선순위가 높아짐 */
+/* 동일 점수일 경우 나중에 선언한 것이 우선됨 */
+/* !important = 가장 높은 우선순위 */
+ul.menu li {
+  background-color: pink !important;
+}
+
+ul.menu li.pick {
+  background-color: yellow;
+}
+
+.menu a {
+  color: inherit;
+}
+
+/* 만약 주고 싶으면 자식 요소 하나하나 부여해야 함 */
+/* .menu li {
+  border: inherit;
+}
+
+.menu a{
+  color: inherit;
+  border: inherit;
+} */
