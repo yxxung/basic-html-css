@@ -1,14 +1,26 @@
-body {
-  font-family: "SUIT";
-  font-weight: 300;
+html {
+  /* font-size 기본 값은 16px */
+  font-size: 0.625em;
 }
 
-ul {
-  border: 1px solid #aaa;
-  height: 1000px;
-  background-repeat: no-repeat;
-  background-image: url("../images/sun.png"), url("../images/cloud.png"),
-    url("../images/tree.png");
-  background-size: 100px 100px, 450px 150px, 350px 600px;
-  background-position: 250px 0, 200px 0, 0 0;
+body {
+  font-size: 1em;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  /* 2em = 16px * 2 */
+  /* em단위는 부모로부터 상속 */
+  font-size: 3rem;
+}
+
+/* rem단위는 무조건 root 기준으로만 계산 */
+
+p {
+  font-size: 2em;
+  /* 단위를 생략 = 넘버 단위 */
+  /* 현재 글자 크기 * 1.5 */
+  /* line-height em, rem을 기준으로 계산시 상속받은 값으로 계산됨 */
+  line-height: 1.5em;
 }
