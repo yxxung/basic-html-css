@@ -5,8 +5,7 @@ html {
 
 body {
   font-size: 1em;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 700;
+  font-family: 'Noto Serif KR', serif;
 }
 
 h1 {
@@ -19,8 +18,8 @@ h1 {
 
 p {
   font-size: 2em;
-  /* 단위를 생략 = 넘버 단위 */
+  /* 단위를 생략 = 넘버 단위(무조건 현재 단락의 글자 크기와 곱함) */
   /* 현재 글자 크기 * 1.5 */
-  /* line-height em, rem을 기준으로 계산시 상속받은 값으로 계산됨 */
+  /* line-height를 em, rem을 기준으로 계산시 상속받은 값으로 계산됨 != 1.5 */
   line-height: 1.5em;
 }
